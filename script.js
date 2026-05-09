@@ -2,8 +2,7 @@ function verificarSenha() {
     const senha = document.getElementById('passInput').value;
     const barra = document.getElementById('barra-forca');
     const conselho = document.getElementById('conselho');
-    
-    // Regras de validação
+
     const regras = {
         comprimento: senha.length >= 8,
         maiuscula: /[A-Z]/.test(senha),
@@ -11,16 +10,13 @@ function verificarSenha() {
         simbolo: /[^A-Za-z0-9]/.test(senha)
     };
 
-    // Atualiza a lista visual de requisitos
     atualizarRequisito('req-comprimento', regras.comprimento);
     atualizarRequisito('req-maiuscula', regras.maiuscula);
     atualizarRequisito('req-numero', regras.numero);
     atualizarRequisito('req-simbolo', regras.simbolo);
 
-    // Calcula a pontuação (quantos True temos)
     const pontos = Object.values(regras).filter(Boolean).length;
 
-    // Lógica da barra de progresso
     if (senha.length === 0) {
         barra.style.width = "0%";
         conselho.innerText = "Comece a digitar...";
