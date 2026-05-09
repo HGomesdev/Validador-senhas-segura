@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Senha Amigável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>🛡️ Testador de Senha</h1>
+        <p>Descubra se a sua senha é fácil de hackear.</p>
+        
+        <div class="input-container">
+            <input type="password" id="passInput" placeholder="Digite uma senha..." oninput="verificarSenha()">
+            <!-- Ícone simples para mostrar que é um campo de segurança -->
+        </div>
+
+        <div class="barra-container">
+            <div id="barra-forca"></div>
+        </div>
+        
+        <p id="conselho">Comece a digitar para avaliar...</p>
+
+        <ul class="lista-requisitos">
+            <li id="req-comprimento">❌ Pelo menos 8 caracteres</li>
+            <li id="req-maiuscula">❌ Uma letra maiúscula</li>
+            <li id="req-numero">❌ Um número</li>
+            <li id="req-simbolo">❌ Um símbolo (!@#$)</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

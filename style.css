@@ -1,0 +1,113 @@
+/* Fundo animado com gradiente que se move */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1a73e8);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card com efeito de vidro (Glassmorphism) */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 380px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 { 
+    color: #4ecca3; 
+    margin-bottom: 5px; 
+    font-size: 26px;
+    text-shadow: 0 0 10px rgba(78, 204, 163, 0.5);
+}
+
+p { color: #ccc; font-size: 14px; }
+
+/* Input estilizado */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #4ecca3;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    box-shadow: 0 0 15px rgba(78, 204, 163, 0.3);
+}
+
+/* Barra de força com brilho (Glow) */
+.barra-container {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#barra-forca {
+    width: 0%;
+    height: 100%;
+    background: #ea4335;
+    transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s;
+    box-shadow: 0 0 10px rgba(234, 67, 53, 0.5);
+}
+
+#conselho {
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.lista-requisitos {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.lista-requisitos li { 
+    margin-bottom: 8px; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.check-ok { 
+    color: #4ecca3 !important; 
+    background: rgba(78, 204, 163, 0.1) !important;
+    font-weight: bold;
+}
