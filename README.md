@@ -1,2 +1,12 @@
-# Validador-senhas-segura
-Um validador de senhas interativo com design moderno (Glassmorphism), focado em ensinar conceitos de segurança digital e sanitização de entradas de forma visual e simples."
+# 🛡️ Validador de Senha Amigável
+Projeto interativo para ensinar segurança digital de forma simples.
+
+## ✨ Funcionalidades
+- Avaliação de força em tempo real.
+- Design moderno com efeito de vidro (Glassmorphism).
+- Fundo animado e feedback visual por emojis.
+
+## 🛠️ Tecnologias
+- HTML5
+- CSS3 (Animações e Flexbox)
+- JavaScript Vanilla
