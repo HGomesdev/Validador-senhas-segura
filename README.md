@@ -10,3 +10,5 @@ Projeto interativo para ensinar segurança digital de forma simples.
 - HTML5
 - CSS3 (Animações e Flexbox)
 - JavaScript Vanilla
+- 
+https://hgomesdev.github.io/Validador-senhas-segura/
